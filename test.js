@@ -26,3 +26,12 @@ console.log(wrongRegex.test(testString));
 let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
 let waldoRegex = /Waldo/;
 console.log(waldoRegex.test(waldoIsHiding));
+
+/*  You can search for multiple patterns using the alternation or OR operator: |.
+  This operator matches patterns either before or after it.*/
+
+// Challenge
+
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/;
+console.log(petRegex.test(petString));
