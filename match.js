@@ -32,3 +32,24 @@ console.log(testStr.match(repeatRegex));
 let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /Twinkle/gi;
 console.log(twinkleStar.match(starRegex));
+
+/* You can search for a literal pattern with some flexibility with character classes. 
+  Character classes allow you to define a group of characters you wish to match by placing them inside square ([ and ]) brackets. */
+
+let bigStr = "big";
+let bagStr = "bag";
+let bugStr = "bug";
+let bogStr = "bog";
+let bgRegex = /b[aiu]g/;
+console.log(bigStr.match(bgRegex));
+console.log(bagStr.match(bgRegex));
+console.log(bugStr.match(bgRegex));
+console.log(bogStr.match(bgRegex));
+
+// Challenge
+
+let quoteSample =
+  "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi;
+let result = quoteSample.match(vowelRegex);
+console.log(result);
