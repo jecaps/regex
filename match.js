@@ -30,5 +30,5 @@ console.log(testStr.match(repeatRegex));
 // Challenge
 
 let twinkleStar = "Twinkle, twinkle, little star";
-let starRegex = /Twinkle/gi; 
-console.log(twinkleStar.match(starRegex);
+let starRegex = /Twinkle/gi;
+console.log(twinkleStar.match(starRegex));
