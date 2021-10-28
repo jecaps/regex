@@ -78,3 +78,9 @@ console.log(jennyStr.match(myRegex));
 
 let myRege = /([h-s2-6])/gi;
 console.log(quoteSample.match(myRege));
+
+// Negated character sets are sets of characters that you do not want to match.
+
+let myQuote = "When the cat is away, the 3 blind mice will play.";
+let regex = /[^aeiou0-9]/gi;
+console.log(myQuote.match(regex));
