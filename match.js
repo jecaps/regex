@@ -67,3 +67,14 @@ console.log(matStr.match(ggRegex));
 
 let alphabetRegex = /[a-z]/gi;
 console.log(quoteSample.match(alphabetRegex));
+
+// Using hypen, it is also possible to combine a range of letters and numbers in a single character set.
+
+let jennyStr = "Jenny8675309";
+let myRegex = /[a-z0-9]/gi;
+console.log(jennyStr.match(myRegex));
+
+// Challenge
+
+let myRege = /([h-s2-6])/gi;
+console.log(quoteSample.match(myRege));
