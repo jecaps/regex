@@ -35,3 +35,12 @@ console.log(waldoRegex.test(waldoIsHiding));
 let petString = "James has a pet cat.";
 let petRegex = /dog|cat|bird|fish/;
 console.log(petRegex.test(petString));
+
+/* You can match both uppercases and lowercases using what is called a flag. 
+  There are other flags but here you'll focus on the flag that ignores case- the i flag.
+  You can use it by appending it to the regex.*/
+
+// Challenge
+
+let fccRegex = /freecodecamp/i;
+console.log(fccRegex.test(testStr));
