@@ -90,3 +90,19 @@ console.log(myQuote.match(regex));
 let difficultSpelling = "Mississippi";
 let sRegex = /s+/g; // Change this line
 console.log(difficultSpelling.match(sRegex));
+
+// Use * to match characters that occur zero or more times.
+
+let soccerWord = "gooooooooal!";
+let gPhrase = "gut feeling";
+let oPhrase = "over the moon";
+let goRegex = /go*/;
+console.log(soccerWord.match(goRegex));
+console.log(gPhrase.match(goRegex));
+console.log(oPhrase.match(goRegex));
+
+// Challenge
+
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /Aa*/; //
+console.log(chewieQuote.match(chewieRegex));
