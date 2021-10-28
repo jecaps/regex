@@ -84,3 +84,9 @@ console.log(quoteSample.match(myRege));
 let myQuote = "When the cat is away, the 3 blind mice will play.";
 let regex = /[^aeiou0-9]/gi;
 console.log(myQuote.match(regex));
+
+// Use the + character to match a character(or a group of charcters) that appears one or more times in a row.
+
+let difficultSpelling = "Mississippi";
+let sRegex = /s+/g; // Change this line
+console.log(difficultSpelling.match(sRegex));
