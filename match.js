@@ -51,5 +51,19 @@ console.log(bogStr.match(bgRegex));
 let quoteSample =
   "Beware of bugs in the above code; I have only proved it correct, not tried it.";
 let vowelRegex = /[aeiou]/gi;
-let result = quoteSample.match(vowelRegex);
-console.log(result);
+console.log(quoteSample.match(vowelRegex));
+
+// Inside a character set, you can define a range of characters to match using a hyphen character: -.
+
+let catStr = "cat";
+let batStr = "bat";
+let matStr = "mat";
+let ggRegex = /[a-e]at/;
+console.log(catStr.match(ggRegex));
+console.log(batStr.match(ggRegex));
+console.log(matStr.match(ggRegex));
+
+// Challenge
+
+let alphabetRegex = /[a-z]/gi;
+console.log(quoteSample.match(alphabetRegex));
